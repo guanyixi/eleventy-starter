@@ -1,4 +1,4 @@
-# Pose
+# Brooklyn Guan
 
 This website is built on GitHub Pages using 11ty, a JavaScript-powered static site generator.
 
