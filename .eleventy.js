@@ -4,7 +4,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventySass);
 
   return {
-    pathPrefix: "/pose/", //If using a base path for your site
+    pathPrefix: "/bg/", //If using a base path for your site
     dir: {
       input: "src",
       output: "public",
