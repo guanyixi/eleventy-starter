@@ -1,13 +1,14 @@
-const splideEvents = new Splide( '.splide-events', {
-    perPage: 3,
+const splideEvents = new Splide( '.tech-icons', {
+    perPage: 7,
     rewind : true,
     arrows: false,
+    pagination: false,
     breakpoints: {
         1023: {
-          perPage: 2,
+          perPage: 5,
         },
         600: {
-          perPage: 1,
+          perPage: 3,
         },
     },
 });

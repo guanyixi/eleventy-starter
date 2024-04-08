@@ -18,10 +18,16 @@ body {
   scroll-behavior: smooth;
 }
 
+img{
+  max-width: 100%;
+  height: auto;
+}
+
 p{
   font-size: 1rem;
   line-height: 1.6;
   margin: 0 0 24px;
+  color: $gray-300;
   @media(max-width:767px){
     font-size: 0.875rem;
   }
@@ -47,13 +53,14 @@ hr{
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .display{
   margin:0 0 18px;
+  font-family: $font_title;
   a{
     text-decoration: none;
   }
 }
 
 .display{
-  font-size:2.75rem;
+  font-size:4rem;
   @media(max-width:767px){
     font-size: 2.25rem;
   }
@@ -67,7 +74,7 @@ h1, .h1 {
 }
 
 h2, .h2{
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   @media(max-width:767px){
     font-size: 1.625rem;
   }

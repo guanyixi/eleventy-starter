@@ -70,6 +70,14 @@
     display: none;
   }
 
+  .font-base{
+    font-family: $font_main;
+  }
+
+  .font-normal{
+    font-weight: 400;;
+  }
+
   .py-8{
     padding-top:2rem;
     padding-bottom:2rem;
@@ -123,11 +131,11 @@
   }
 
   .pill{
-    width:42px;
-    height:6px;
-    background-color: $accent;
-    border-radius: 3px;
-    margin-bottom:18px;
+    width:48px;
+    height:8px;
+    background: linear-gradient(to right, $primary, $primary-200);
+    border-radius: 4px;
+    margin:0 auto 18px
   }
 
   .card{
@@ -138,8 +146,16 @@
     overflow: hidden;
   }
 
-  .text-gradient span{
-    background: linear-gradient(to right, $accent, $primary);
+  .gra-primary{
+    background: linear-gradient(45deg, $primary-200, $primary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .gra-accent{
+    background: linear-gradient(45deg, $accent-200, $accent);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
