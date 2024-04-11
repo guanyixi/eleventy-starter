@@ -1,0 +1,14 @@
+{
+    "projects": [
+        {
+            "title": "Project 1 Title",
+            "content": "Project description",
+            "image": "/img/projects/fish.jpg"
+        },
+        {
+            "title": "Project 2 Title",
+            "content": "Project description",
+            "image": "/img/projects/bird.jpg"
+        }
+    ]
+}

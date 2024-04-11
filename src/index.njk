@@ -1,60 +1,24 @@
 ---
 layout: base.njk
-title: Full-Stack Web Developer
+title: Homepage
 ---
 
 <section id="home">
     <div class="container-sm">
-       <h1 class="display text-center mb-12">Full-Stack <span class="gra-primary">Web Developer</span> Based in <span class="gra-accent">Chicago.</span></h1>
-       <h2 class="text-center font-base font-normal h4">Hi there, I am Brooklyn Guan. I create web products for marketers using modern technologies & approaches. </h2>
-    </div>
-    <div class="container-lg">
-        <div class="splide tech-icons" id="splide">
-           <div class="splide__track">
-               <ul class="splide__list">
-                    <li class="splide__slide">
-                        <img src="{{'/img/tech-icons/11ty.png'| url}}" alt="11ty logo">
-                    </li>
-                    <li class="splide__slide">
-                        <img src="{{'/img/tech-icons/js.png'| url}}" alt="JS logo">
-                    </li>
-                    <li class="splide__slide">
-                        <img src="{{'/img/tech-icons/nextjs.png'| url}}" alt="nextjs logo">
-                    </li>
-                    <li class="splide__slide">
-                        <img src="{{'/img/tech-icons/wordpress.png'| url}}" alt="wordpress logo">
-                    </li>
-                    <li class="splide__slide">
-                        <img src="{{'/img/tech-icons/react.png'| url}}" alt="react logo">
-                    </li>
-                    <li class="splide__slide">
-                        <img src="{{'/img/tech-icons/supabase.png'| url}}" alt="supabase logo">
-                    </li>
-                    <li class="splide__slide">
-                        <img src="{{'/img/tech-icons/typescript.jpeg'| url}}" alt="typescript logo">
-                    </li>
-                    <li class="splide__slide">
-                        <img src="{{'/img/tech-icons/webpack.png'| url}}" alt="webpack logo">
-                    </li>
-               </ul>
-           </div>
-        </div>
+       <h1 class="display text-center mb-12">Eleventy Starter</h1>
     </div>
 </section>
 
-<section id="technologies" class="py-20">
+<section id="projects" class="py-20">
     <div class="container">
         <div class="pill"></div>
-        <h2 class="text-center">Technologies</h2>
-        <h3 class="font-base font-normal h5 text-center">Chosen Thoughtfully for Building Better Marketing Web Products</h3>
-        <pre>{{ collections.technologies | dump | safe }}</pre>
         <div class="units">
-            {% for item in tech.tech %}
+            {% for item in projects.projects %}
             <div class="unit">
-                <img src="{{ item.image | url }}" alt="{{ item.title }}" class="tech-image">
+                <img src="{{ item.image | url }}" alt="{{ item.title }}">
                 <div>
                     <h3>{{ item.title }}</h3>
-                    <p>{{ item.content }}</p>
+                    <p>{{ item.content | safe }}</p>
                 </div>
             </div>
             {% endfor %} 

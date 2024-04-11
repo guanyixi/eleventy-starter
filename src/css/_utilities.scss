@@ -1,45 +1,3 @@
-
-.btn{
-    display: inline-block;
-    background-color: $accent;
-    color: white;
-    font-size: 14px;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 2px;
-    box-shadow: none;
-    border:0;
-    border-radius: 100px;
-    padding:18px 26px;
-    cursor: pointer;
-    font-weight: 600;
-    transition: all 0.25s ease;
-    &:hover{
-      background-color: $accent-200;
-      color: white;
-    }
-    @media(max-width:767px){
-      padding:14px 22px;
-    }
-  }
-
-  .btn-text{
-    background:transparent;
-    border:0;
-    font-size: 16px;
-    color: $primary;
-    font-family: $font_main;
-    padding:0;
-    width:auto;
-    cursor: pointer;
-    font-weight: 500;
-    img{
-      position: relative;
-      top: 1px;;
-      margin-left:2px;
-    }
-  }
-
   .container-lg{
     max-width:1380px;
   }
@@ -120,44 +78,26 @@
     text-align: center;
   }
 
+  .font-light{
+    font-weight: 300;
+  }
+  
+  .font-normal{
+    font-weight: 400;
+  }
+  
   .font-bold{
-    font-weight: bold;
-  }
-
-  .label{
-    letter-spacing: 1px;
     font-weight: 600;
-    text-transform: uppercase;
   }
-
-  .pill{
-    width:48px;
-    height:8px;
-    background: linear-gradient(to right, $primary, $primary-200);
-    border-radius: 4px;
-    margin:0 auto 18px
+  
+  .leading-tight{
+    line-height: 1.25;
   }
-
-  .card{
-    background-color: white;
-    border-radius: 12px;
-    box-shadow: 0 10px 16px rgba(black, 0.1);
-    margin:2rem 0;
-    overflow: hidden;
+  
+  .leading-snug{
+    line-height: 1.375;
   }
-
-  .gra-primary{
-    background: linear-gradient(45deg, $primary-200, $primary);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    -webkit-text-fill-color: transparent;
-  }
-
-  .gra-accent{
-    background: linear-gradient(45deg, $accent-200, $accent);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    -webkit-text-fill-color: transparent;
+  
+  .leading-normal{
+    line-height: 1.5;
   }

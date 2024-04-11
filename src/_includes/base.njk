@@ -3,11 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="{{ global.keywords }}">
+	<meta name="description" content="{{ global.description }}">
 	<link rel="apple-touch-icon" sizes="180x180" href="{{ '/img/favicons/apple-touch-icon.png' | url }}">
 	<link rel="icon" type="image/png" sizes="32x32" href="{{ '/img/favicons/favicon-32x32.png' | url }}">
 	<link rel="icon" type="image/png" sizes="16x16" href="{{ '/img/favicons/favicon-16x16.png' | url }}">
 	<link rel="manifest" href="{{ '/img/favicons/site.webmanifest' | url }}">
-	<title>Brooklyn Guan - {{ title }}</title>
+	<title>{{ global.title }} - {{ title }}</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
@@ -25,9 +27,7 @@
 				<div class="bar"></div>
 			</button>
 			<nav>
-				<li><a href="#technologies">Technologies</a></li>
-				<li><a href="#approaches">Approaches</a></li>
-				<li><a href="#about">About Me</a></li>
+				<li><a href="/blog/">Blog</a></li>
 			</nav>
 		</div>
 	</header>
@@ -35,7 +35,7 @@
 	{{ content | safe }}
 	</main>
 	<footer>
-		<div class="container text-center">© <span class="current-year"></span> brooklynguan.com</div>
+		<div class="container text-center">© <span class="current-year"></span> sitename.com</div>
 	<script src="{{ '/js/index.js' | url }}"></script>
 </body>
 </html>

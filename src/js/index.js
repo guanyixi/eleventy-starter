@@ -1,8 +1,9 @@
-function initSplideTech() {
-  const splideTechEl = document.querySelector('.tech-icons');
+function initSplide() {
+  const className = '.class-name';
+  const splideEl = document.querySelector(className);
 
-  if (splideTechEl) {
-      const splideTech = new Splide(splideTechEl, {
+  if (splideEl) {
+      const splide = new Splide(className, {
         perPage: 7,
         rewind : true,
         arrows: false,
@@ -16,7 +17,7 @@ function initSplideTech() {
             },
         },
       });
-      splideTech.mount();
+      splide.mount();
   }
 }
 
@@ -50,6 +51,7 @@ function initMenuToggle() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+  initSplide();
   setCurrentYear();
   initMenuToggle();
 });
